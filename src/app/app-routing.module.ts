@@ -5,17 +5,26 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './home/home.module#HomePageModule',
   },
-  { path: 'about', loadChildren: './about/about.module#AboutPageModule' }
+  { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
+  {
+    path: 'arstechnica',
+    loadChildren: './arstechnica/arstechnica.module#ArstechnicaPageModule',
+  },
+  {
+    path: 'techcrunch',
+    loadChildren: './techcrunch/techcrunch.module#TechcrunchPageModule',
+  },  { path: 'techcrunch', loadChildren: './techcrunch/techcrunch.module#TechcrunchPageModule' },
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

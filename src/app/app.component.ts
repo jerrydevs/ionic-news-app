@@ -19,6 +19,16 @@ export class AppComponent {
       title: 'About',
       url: '/about',
       icon: 'help-circle-outline'
+    },
+    {
+      title: 'ArsTechnica',
+      url: '/arstechnica',
+      icon: 'code'
+    },
+    {
+      title:'TechCrunch',
+      url: '/techcrunch',
+      icon: 'code'
     }
   ];
 
